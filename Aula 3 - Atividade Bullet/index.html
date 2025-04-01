@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title id="topo">Atividade Bullet</title>
+    <title>Atividade Bullet</title>
   </head>
   <body>
-    <header>
+    <header id="topo">
       <h1>O método Bullet Journal</h1>
       <a href="https://www.facebook.com/bulletjournal"
         ><img
@@ -70,12 +70,14 @@
               <li>Qual é a minha necessidade de anotação diária?</li>
               <li>Como é a minha rotina?</li>
               <li>Que tipo de anotações preciso fazer?</li>
-              <li>Tenho muitos ou poucos compromissos com hora marcada?</li>
-              <p>
-                Depois de responder a essas e outras perguntas que achar
-                pertinentes, você vai amadurecendo o formato do seu Bullet
-                Journal perfeito. Falaremos disso novamente nos passos 4 e 5.
-              </p>
+              <li>
+                Tenho muitos ou poucos compromissos com hora marcada?
+                <p>
+                  Depois de responder a essas e outras perguntas que achar
+                  pertinentes, você vai amadurecendo o formato do seu Bullet
+                  Journal perfeito. Falaremos disso novamente nos passos 4 e 5.
+                </p>
+              </li>
             </ul>
           </li>
           <li>
@@ -167,50 +169,255 @@
             <label for="nome">*Nome Completo</label>
             <input
               required
-              type="Nome"
+              type="text"
               id="nome"
               name="nome"
               placeholder="nome"
             />
           </p>
-          <p>
-            <fieldset>
-              <legend for="mensagem">Tipo de Mensagem:</legend>
+          <p></p>
+          <fieldset>
+            <legend>Tipo de Mensagem:</legend>
             <p>
-                
-                <label for="relato"><input type="radio" id="relato" name="news">Relato de experiência</label>
-                
-                
-                <label for="ruvidas"><input type="radio" id="duvida" name ="news">Dúvidas</label>
-                
-                
-                <label for="outros"><input type="radio"id=outros name="news"> Outros</label>
-                
-            </p>
-            </fieldset>
-            <p>
-              <label for="assunto">Assunto:</label>
-              <select id="assunto">
-                <option value="metas">Metas e Objetivos</option>
-                <option value="coleção">Coleções Personalizadas</option>
-                <option value="registro">Registro de Hábito</option>
-                <option value="planejamento">Planejamento Financeiro</option>
-             </select>
-           </p>
-            <p>
-              <label for="numero">*Celular (somente números)</label>
-              <input type="number" id="numero">
-            </p>
-            <p>
-              <label for="data">*Data de nascimento:</label>
-              <input type="date" id="data">
-            </p>
+              <label for="relato"
+                ><input type="radio" id="relato" name="news" />Relato de
+                experiência</label
+              >
 
+              <label for="duvida"
+                ><input type="radio" id="duvida" name="news" />Dúvidas</label
+              >
+
+              <label for="outros"
+                ><input type="radio" id="outros" name="news" /> Outros</label
+              >
+            </p>
+          </fieldset>
+          <p>
+            <label for="assunto">Assunto:</label>
+            <select id="assunto">
+              <option value="metas">Metas e Objetivos</option>
+              <option value="coleção">Coleções Personalizadas</option>
+              <option value="registro">Registro de Hábito</option>
+              <option value="planejamento">Planejamento Financeiro</option>
+            </select>
+          </p>
+          <p>
+            <label for="numero">*Celular (somente números)</label>
+            <input required type="number" id="numero" />
+          </p>
+          <p>
+            <label for="data">*Data de nascimento:</label>
+            <input required type="date" id="data" />
+          </p>
+          <p>
+            <label for="observações">Observações:</label>
+          </p>
+
+          <p>
+            <textarea name="observações" id="observações"></textarea>
+          </p>
+
+          <p>
+            <label for="email">*Email</label>
+            <input required type="email" id="email" placeholder="email" />
+          </p>
+          <p>
+            <label for="notificado"
+              ><input type="checkbox" id="notificado" />Desejo receber
+              notificações por email sobre outros chamadas</label
+            >
+          </p>
+          <p>
+            <button type="reset">LIMPAR FORMULÁRIO</button>
+            <button type="submit">ENVIAR FORMULÁRIO</button>
           </p>
         </form>
       </section>
+      <section>
+        <h2>Entenda o método</h2>
+        <ul>
+          <li>
+            <h3>Simbologia</h3>
+            <p>
+              Você tem notas ( - ), ações ( • ), eventos ( o ) e uma adição
+              recente —⁠ Humores ( = )!⁠
+            </p>
+            <video width="240" height="320" controls>
+              <source src="src/videos/simbologia.mp4" type="video/mp4" />
+              <source src="src/videos/simbologia.ogv" type="video/ogg" />
+              Seu Navegador não suporta esse video
+            </video>
+          </li>
+
+          <li>
+            <h3>Bullet em 5 minutos</h3>
+            <p>
+              Como começo o Bullet Journaling? O que você escreve durante o dia?
+              Quanto tempo leva para o Bullet Journal? O que você faz à noite em
+              vez do dia? ⁠
+            </p>
+            <p>
+              Recebemos essas perguntasBullet em 5 minutos com frequência, de
+              pessoas que tentaram, pararam e tentaram novamente o Bullet
+              Journaling. Há muitas informações por aí dizendo que seu Bullet
+              Journal precisa de muitos componentes para ser um Bullet Journal.⁠
+              ⁠Na verdade, você só precisa de 5 minutos.
+            </p>
+
+            <video width="240" height="320" controls>
+              <source src="src/videos/bullet-5min.mp4" type="video/mp4" />
+              <source src="src/videos/bullet-5min.ogv" type="video/ogg" />
+              Seu Navegador não suporta esse video
+            </video>
+          </li>
+
+          <li>
+            <h3>Tarefas que não se encaixam</h3>
+            <p>
+              No vídeo desta semana, Ryder explica o que fazer com tarefas no
+              seu Bullet Journal que não se encaixam no dia, semana ou mês e só
+              precisam acontecer "algum dia".
+            </p>
+
+            <video width="240" height="320" controls>
+              <source
+                src="src/videos/tarefas-nao-encaixam.mp4"
+                type="video/mp4"
+              />
+              <source
+                src="src/videos/tarefas-nao-encaixam.ogv"
+                type="video/ogg"
+              />
+              Seu Navegador não suporta esse video
+            </video>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <h2>Links utéis</h2>
+        <ol>
+          <li>
+            <h3>Como começar</h3>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=cRVn3AzMcnI"
+                  >O ÚNICO sistema de ORGANIZAÇÃO que funcionou para mim - O
+                  Bullet Journal</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=ORv60HxNzQo"
+                  >Como Fazer o BULLET JOURNAL mais simples de todos</a
+                >
+              </li>
+            </ul>
+          </li>
+          <li>
+            <h3>Exemplos de bullet journal</h3>
+            <ul>
+              <li>
+                <a href="https://www.youtube.com/watch?v=dtC1M3NyxRA"
+                  >Bullet journal ideas MARATHON - +200 ideas for your bujo</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=tR6CHxIHntk"
+                  >Meu Bullet Journal Minimalista</a
+                >
+              </li>
+              <li>
+                <a href="https://www.youtube.com/watch?v=eTIcCcflQAk"
+                  >Como componho meu Bullet Journal | Minimalista e Funcional</a
+                >
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </section>
+      <section>
+        <h2>Escreva uma vida melhor</h2>
+        <p>
+          Bujo fornece ferramentas simples para ajudá-lo a transformar
+          suavemente o maneira como você trabalha, pensa, sente e vive, uma
+          página de cada vez. Bujo fornece ferramentas simples para ajudá-lo a
+          transformar suavemente o maneira como você trabalha, pensa, sente e
+          vive, uma página de cada vez.
+        </p>
+        <p>
+          <img
+            src="src/images/miniatures/min-bujo.png"
+            alt="Uma imagem com uma rotina organizada"
+          />
+        </p>
+        <p></p>
+        <h3>Exemplos</h3>
+
+        <p>
+          <a
+            href="https://getfireshot.com/pdf_ZmlsZTovLy9DOi9Vc2Vycy9rZW5uZS9PbmVEcml2ZS8lQzMlODFyZWElMjBkZSUyMFRyYWJhbGhvL2lmYy9wcm92YXMvcHJvdmElMjAtJTIwYnVsbGV0L2luZGV4Lmh0bWw="
+            ><img src="src/images/miniatures/min-index.png" alt="imagem 1"
+          /></a>
+
+          <a
+            href="https://getfireshot.com/pdf_ZmlsZTovLy9DOi9Vc2Vycy9rZW5uZS9PbmVEcml2ZS8lQzMlODFyZWElMjBkZSUyMFRyYWJhbGhvL2lmYy9wcm92YXMvcHJvdmElMjAtJTIwYnVsbGV0L2luZGV4Lmh0bWw="
+            ><img src="src/images/miniatures/min-index-ano.png" alt="imagem 2"
+          /></a>
+
+          <a
+            href="https://getfireshot.com/pdf_ZmlsZTovLy9DOi9Vc2Vycy9rZW5uZS9PbmVEcml2ZS8lQzMlODFyZWElMjBkZSUyMFRyYWJhbGhvL2lmYy9wcm92YXMvcHJvdmElMjAtJTIwYnVsbGV0L2luZGV4Lmh0bWw="
+            ><img src="src/images/miniatures/min-future-log.png" alt="imagem 3"
+          /></a>
+        </p>
+      </section>
+      <section>
+        <h2 id="lojinha">Lojinha</h2>
+        <ul>
+          <li>
+            <h3>O caderno</h3>
+            <a
+              href="https://bulletjournal.com/products/edition-2?variant=33052778692705"
+              ><img src="src/images/caderno.png" alt="caderno"
+            /></a>
+            <p>
+              Repleta de novos recursos, impressa em nosso novo papel lindamente
+              formulado e de origem sustentável, a Edição 2 é o clássico caderno
+              Bujo® redefinido.
+            </p>
+          </li>
+          <li>
+            <h3>Edição do Artista 2023</h3>
+            <a href="https://bulletjournal.com/products/artist-edition-2023"
+              ><img src="src/images/ed-artista.png" alt="edição limitada"
+            /></a>
+            <p>
+              Estamos comprometidos em apoiar e mostrar o talento incrível
+              dentro da nossa comunidade. É por isso que temos orgulho de
+              oferecer este caderno de edição limitada do artista, projetado por
+              Annie (@ajournalbyannie, membro da comunidade Bujo). Este caderno
+              de edição do artista vem embalado em uma caixa colecionável e é
+              uma impressão única, tornando-o uma adição verdadeiramente única e
+              especial a qualquer coleção de cadernos.
+            </p>
+          </li>
+          <li>
+            <h3>Caneta</h3>
+            <a href="https://bulletjournal.com/products/the-bujo-drehgriffel"
+              ><img src="src/images/caneta.png" alt="Caneta"
+            /></a>
+            <p>
+              Fizemos uma parceria com a Leuchtturm 1917 para trazer a você uma
+              edição especial de sua caneta Drehgriffel extremamente popular.
+              Esta caneta é feita de alumínio e latão fresados ​​com precisão,
+              laqueados e selados. A edição Bujo combina belos detalhes em latão
+              com um acabamento texturizado preto fosco moderno.
+            </p>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer>
+      <a href="#topo">Voltar para o topo</a>
       <p>Copyright &copy; 2025 - Alguns direitos reservados</p>
       <p>Desenvolvido por: Tomas Locatelli</p>
     </footer>
