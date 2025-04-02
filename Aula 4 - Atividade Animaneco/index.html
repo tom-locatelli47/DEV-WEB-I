@@ -6,7 +6,7 @@
     <title>Atividade Animalesco</title>
   </head>
   <body>
-    <header>
+    <header id="topo">
       <img src="src/images/banner.jpg" alt="banner do evento" />
       <h1>Festival Internacional de Teatro de Bonecos</h1>
       <p>
@@ -16,7 +16,7 @@
     </header>
     <main>
       <section>
-        <h2 id="topo">Programação Resumida</h2>
+        <h2 id="programação">Programação Resumida</h2>
         <h3>Joinville</h3>
         <ol>
           <li>
@@ -56,7 +56,7 @@
         </ol>
       </section>
       <section>
-        <h2>Espetáculos</h2>
+        <h2 id="espetaculos">Espetáculos</h2>
         <p>
           Os espetáculos do 6º Animaneco prometem encantar e surpreender o
           público. Este ano, o festival contará com cinco espetáculos convidados
@@ -72,7 +72,7 @@
           inesquecíveis no Animaneco!
         </p>
 
-        <h3>Espetáculo (Velhos) Viejos</h3>
+        <h3 id="velho">Espetáculo (Velhos) Viejos</h3>
         <p>
           Velhos é o primeiro espetáculo da trilogia sobre a velhice. Os 8
           personagens são bonecos de diferentes técnicas e tamanhos. Desde
@@ -92,7 +92,7 @@
         <p><strong>Classificação indicativa: 14 anos</strong></p>
         <img src="src/images/esp-velhos.jpg" alt="espetaculo dos velhos" />
 
-        <h3>Entre Mundos</h3>
+        <h3 id="mundos">Entre Mundos</h3>
         <p>
           Entre mundos é um espetáculo com máscaras teatrais, sem utilização de
           palavras, e propõe uma experiência sensorial para o público infantil.
@@ -127,10 +127,10 @@
         </p>
       </section>
       <section>
-        <h2>Edições Passadas</h2>
+        <h2 id="edições">Edições Passadas</h2>
         <ul>
           <li>
-            <h4>1º Animaneco</h4>
+            <h4 id="primeira">1º Animaneco</h4>
             <p>
               O 1º ANIMANECO Festival de Teatro de Bonecos de Joinville, nasceu
               em 2017 e em sua primeira edição reuniu colaborativamente 8 Cias
@@ -147,7 +147,7 @@
             </p>
           </li>
           <li>
-            <h4>2º Animaneco</h4>
+            <h4 id="segunda">2º Animaneco</h4>
             <p>
               Devido ao sucesso da primeira edição, no ano seguinte o festival
               contou com mais espetáculos e também dias de apresentações. Uma
@@ -164,7 +164,7 @@
             </p>
           </li>
           <li>
-            <h4>3º Animaneco</h4>
+            <h4 id="terceira">3º Animaneco</h4>
             <p>
               Devido ao sucesso da primeira edição, no ano seguinte o festival
               contou com mais espetáculos e também dias de apresentações. Uma
@@ -183,7 +183,7 @@
         </ul>
       </section>
       <section>
-        <h2>Videos</h2>
+        <h2 id="videos">Videos</h2>
         <h3>Oficina de Bonecos Gigantes</h3>
         <p>
           Confira um pouco de como foi nossa oficina de Bonecos Gigantes com o
@@ -208,7 +208,7 @@
         </video>
       </section>
       <section>
-        <h2>Inscreva-se em nossas atividades</h2>
+        <h2 id="inscreva-se">Inscreva-se em nossas atividades</h2>
         <form action="#">
           <label for="nome">*Nome Completo</label>
           <input
@@ -276,7 +276,7 @@
         </form>
       </section>
       <section>
-        <h2>Reserve seu ingresso clicando no link das imagens</h2>
+        <h2 id="reserva">Reserve seu ingresso clicando no link das imagens</h2>
         <ul>
           <li>
             <h3>Oficina - Iluminação para o Teatro Lambe-lambe</h3>
@@ -303,9 +303,7 @@
             <p>
               <a
                 href="https://www.enjoyticket.com.br/index.php?pg=evento&id=142"
-                ><img
-                  src="src/images/oficina-lambemebe.png"
-                  alt="Mamulengo Fuzuê"
+                ><img src="src/images/esp-velhos.jpg" alt="Mamulengo Fuzuê"
               /></a>
             </p>
           </li>
@@ -315,9 +313,61 @@
           <a href="https://www.enjoyticket.com.br/">enjoyticket</a>
         </p>
       </section>
+      <section>
+        <h2>Mapa do Site</h2>
+        <ol>
+          <li>
+            <a href="#programação">Programação Resumida</a>
+          </li>
+          <li>
+            <a href="#espetaculos">Espetáculos</a>
+            <ol>
+              <li>
+                <a href="#velho">Espetáculo (Velhos) Viejos</a>
+              </li>
+              <li>
+                <a href="#mundos">Espetáculo Entre Mundos</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#edições">Edições Passadas</a>
+            <ol>
+              <li>
+                <a href="#primeira">1º Animaneco</a>
+              </li>
+              <li>
+                <a href="#segunda">2º Animaneco</a>
+              </li>
+              <li>
+                <a href="#terceira">3º Animaneco</a>
+              </li>
+            </ol>
+          </li>
+          <li>
+            <a href="#videos">Videos</a>
+          </li>
+          <li>
+            <a href="#inscreva-se">Inscreva-se em nossas atividades</a>
+          </li>
+          <li>
+            <a href="#reserva">Reserve seu ingresso</a>
+          </li>
+        </ol>
+      </section>
     </main>
     <footer>
-      <a href="#topo">Vote para o topo</a>
+      <a href="https://www.facebook.com/animanecojoinville/?locale=pt_BR"
+        ><img
+          src="src/images/social-icon/facebook.png"
+          alt="logo facebook" />|</a
+      >
+      <a href="https://www.instagram.com/animanecojoinville/"
+        ><img src="src/images/social-icon/instagram.png" alt="logo instagram"
+      /></a>
+      <p>
+        <a href="#topo">Vote para o topo</a>
+      </p>
       <p>Copyright &copy; 2025 - Alguns direitos reservados</p>
       <p>Desenvolvido por: Tomas Locatelli</p>
     </footer>
