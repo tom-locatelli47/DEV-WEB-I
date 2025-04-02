@@ -211,7 +211,66 @@
         <h2>Inscreva-se em nossas atividades</h2>
         <form action="#">
           <label for="nome">*Nome Completo</label>
-          <input required type="text" placeholder="nome" id="nome" />
+          <input
+            required
+            type="text"
+            placeholder="nome"
+            id="nome"
+            name="nome" />
+          <p>
+            <label for="email">*Email</label>
+            <input
+              required
+              type="email"
+              placeholder="email"
+              id="email"
+              name="emai" />
+          </p>
+          <p>
+            <label for="cpf">*CPF</label>
+            <input
+              required
+              type="number"
+              placeholder="cpf"
+              id="cpf"
+              name="cpf" />
+          </p>
+          <p>
+            <label for="celular">*Celular</label>
+            <input
+              required
+              type="number"
+              placeholder="telefone celular"
+              id="celular"
+              name="celular" />
+          </p>
+          <p>
+            <label for="data">*Data de nascimento</label>
+            <input requiret type="date" id="data" name="data" />
+          </p>
+          <p>
+            <label for="atividade">Atividades</label>
+            <select name="atividades" id="atividade">
+              <option value="bonecos">Oficina teatro de bonecos</option>
+              <option value="sombras">Teatro de sombras</option>
+              <option value="interpretação">Interpretação viva</option>
+            </select>
+          </p>
+          <fieldset>
+            <legend>Necessidade de acompanhamento especializado</legend>
+            <label> <input type="radio" name="y/n" value="1" />Sim </label>
+            <label> <input type="radio" name="y/n" value="2" />Não </label>
+          </fieldset>
+          <p>
+            <label for="obs">Observação:</label>
+          </p>
+          <p>
+            <textarea name="obs" id="obs"></textarea>
+          </p>
+          <p>
+            <label><input type="checkbox">Deseja receber notificações por email sobre outros chamados</label>
+            
+          </p>
         </form>
       </section>
     </main>
