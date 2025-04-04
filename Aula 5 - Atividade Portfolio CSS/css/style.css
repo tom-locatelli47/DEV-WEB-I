@@ -1,3 +1,26 @@
+/*=============================================================
+                  GERAL
+==============================================================*/
+
 body {
-    background: rgb(99, 224, 238);
+    /* background: rgb(99, 224, 238); */
+    background: white;
+    color: #21243D;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     /*font-family. Fonte usadas no sites, se não tiver a primeira ele pega a segunda */
+}
+
+a {
+    color: #21243D; /*cor do link */
+    text-decoration: none; /*tirar a barra do link */
+
+}
+/*=============================================================
+                  ESPECIFICO
+==============================================================*/
+
+header ul li{
+    text-align: center;
+    padding: 10px 0 10px 0;
+    margin: ;
 }
