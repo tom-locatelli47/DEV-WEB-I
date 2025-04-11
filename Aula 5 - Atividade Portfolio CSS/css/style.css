@@ -61,20 +61,22 @@ section.posts {
 section.posts h2 {
   text-align: center;
   margin: 15px;
+  padding: 15px 0 0 0;
 }
 
-section.posts ul li {
-    background-color: white;
-    padding: 15px; /* conteudo da borda */
-    margin: 12px 10px 12px 10px; /* um elemento do outro */
+section.posts li {
+  margin: 15px 0;
+  background-color: white;
+  padding: 15px;
+  border-radius: 4px;
 }
 
-section.posts ul li h3 {
-    font-weight: bold;
-    font-size: 1rem;
-    margin: 10px;
+section.posts li h3 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  line-height: 130%;
 }
 
-section.post ul li p {
-
+section.posts li p {
+  margin: 20px 0 0 0;
 }
