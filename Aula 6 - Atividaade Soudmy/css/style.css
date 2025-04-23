@@ -1,0 +1,143 @@
+/*=============================================================
+                  GERAL
+==============================================================*/
+
+html {
+  font-size: calc(15px + 0.390625vw); /*responsividade da fonte*/
+}
+
+body {
+  /* background: rgb(99, 224, 238); */
+  background: white;
+  color: #21243d;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /*font-family. Fonte usadas no sites, se não tiver a primeira ele pega a segunda */
+}
+
+a {
+    color: #21243d; /*cor do link */
+    text-decoration: none; /*tirar a barra do link */
+  }
+  
+  p {
+    line-height: 130%; /*altura da linha */
+  }
+
+button {
+    background-color: #0E8388;
+    border: none;
+    color: #fff;
+    border-radius: 15px;
+    }
+
+h1 {
+    color: black;
+}
+
+p {
+    color: #888888;
+}
+
+ img{
+    max-width: 100%;
+ }
+ 
+ html {
+    font-family: comfortaa;
+ }
+
+/*=========================== HEARDER ============================================================*/
+header ul li {
+    text-align: center;
+    padding: 10px 0 10px 0;
+  }
+
+header nav h1 {
+    font-size: 1rem;
+
+}
+
+button {
+background-color: #0E8388;
+border: none;
+color: #fff;
+border-radius: 15px;
+}
+
+main h1 {
+    text-align: center;
+    font-size: 1rem;
+    margin: 15px;
+}
+
+main section.inicio  {
+    text-align: center;
+    margin: 0 0 10vw 0;
+}
+
+main section.inicio p {
+    text-align: center;
+    padding: 5px;
+    margin: 5px 0 10px 0;
+}
+
+main section.meio {
+    background-color: #CBE4DE;
+    text-align: center;
+    padding:  20px 0 20px 0;
+}
+
+main section.meio ul li {
+    margin: 30px;
+    background-color: white;
+    padding: 20px;
+    
+}
+main section.meio ul li span {
+    margin: 10px;
+    padding: 15px;
+    font-size: 3rem;
+}
+
+main section.meio ul li h2{
+   font-size: 1rem; 
+   margin: 0 0 10px 0;
+
+}
+
+main section.meio ul li span p {
+    margin: 15px 0 20px;
+    padding: 15px;
+}
+
+section.final p {
+    text-align: center;
+    padding: 10;
+    margin: 10px;
+}
+
+section.final ul li {
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: #CBE4DE;
+    padding: 15px;
+
+}
+footer h2{
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+footer p{
+    margin: 20px;
+}
+
+footer ul li{
+    margin: 20px;
+}
