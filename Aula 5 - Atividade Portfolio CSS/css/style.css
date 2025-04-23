@@ -23,9 +23,21 @@ a {
 p {
   line-height: 130%; /*altura da linha */
 }
+
+section h2 {
+  text-align: center;
+  margin: 15px;
+  padding: 15px 0 0 0;
+}
+
+img {
+  max-width: 100%;
+}
 /*=============================================================
                   ESPECIFICO
 ==============================================================*/
+
+/* ===================================================Pagina index=========================================================*/
 
 header ul li {
   text-align: center;
@@ -58,25 +70,163 @@ section.posts {
   padding: 10xp;
 }
 
-section.posts h2 {
-  text-align: center;
-  margin: 15px;
-  padding: 15px 0 0 0;
-}
-
-section.posts li {
-  margin: 15px 0;
+section.posts ul li {
+  margin: 12px 10px 12px 10px;
   background-color: white;
   padding: 15px;
   border-radius: 4px;
 }
 
-section.posts li h3 {
+section.posts ul li h3 {
   font-weight: bold;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   line-height: 130%;
 }
 
-section.posts li p {
-  margin: 20px 0 0 0;
+section.works {
+  padding: 20px 10px 20px 10px;
+}
+
+section.works ul li {
+  margin: 15px 0 15px 0;
+}
+
+section.works ul li h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  line-height: 130%;
+  padding: 10px 0 0 0;
+}
+
+section.works ul li p.info {
+  color: #8695a4;
+  padding: 15px 0;
+}
+
+section.works ul li p.info span {
+  color: white;
+  background-color: #142850;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 16px;
+}
+
+section.works ul {
+  border-bottom: 1px solid #e0e0e0;
+}
+
+/* ===================================================Pagina Works=========================================================*/
+section.featured {
+  padding: 20px 10px 20px 10px;
+}
+section.featured h2 {
+  font-size: 2.4rem;
+  text-align: left;
+}
+
+section.featured ul li h3 {
+  font-weight: bold;
+  font-size: 1.8rem;
+  margin: 0 0 10px 0;
+}
+
+section.featured ul li {
+  margin: 25px 0 25px 0;
+}
+
+section.featured ul li p {
+  margin: 15px 0;
+  color: black;
+}
+
+section.featured ul li p.data {
+  color: #21243d;
+}
+
+section.featured ul li p.data span {
+  color: white;
+  background-color: #ff7c7c;
+  padding: 5px 10px;
+  border-radius: 16px;
+}
+/* ===================================================footer=========================================================*/
+footer {
+  text-align: center;
+}
+
+footer a {
+  font-size: 2.3rem;
+  margin: 10px 15px 10px 15px;
+}
+footer p {
+  margin: 20px 0 20px 0;
+}
+
+/* =============================================Para Computador Index===============================================================*/
+
+@media (min-width: 900px) {
+  header ul {
+    display: flex;
+    justify-content: right;
+  }
+
+  header ul li {
+    margin: 0px 15px 0 15px;
+  }
+
+  section.banner {
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+    padding: 7vw 7vw 2vw 7vw;
+  }
+
+  section h2 {
+    text-align: left;
+    font-size: 1.5rem;
+  }
+
+  section.banner .texto {
+    margin-right: 7vw;
+  }
+
+  section.posts {
+    padding: 5vw 7vw 2vw 7vw;
+  }
+
+  section.posts ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.posts ul li {
+    padding: 3%;
+    width: 45%;
+  }
+
+  section.works {
+    padding: 5vw 7vw 2vw 7vw;
+  }
+
+  section.works ul {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  section.works ul li {
+    padding: 15px;
+    width: 45%;
+  }
+
+  section.works h3 {
+    padding: 15px 0px 15px 0;
+  }
+
+  section.works ul li p.info {
+    padding: 10px 0 10px 0;
+  }
+
+  section.works ul {
+    border-bottom: none;
+  }
 }
