@@ -60,7 +60,7 @@ header h1 {
   margin: 10px 0 10px 0;
 }
 
-main h1 {
+main h2 {
   text-align: center;
   font-size: 1.2rem;
   margin: 15px;
@@ -104,7 +104,7 @@ main section.meio ul li span p {
   padding: 15px;
 }
 
-section.final h1 {
+section.final h2 {
   margin: 8vw 0 0 0;
 }
 
@@ -119,7 +119,7 @@ section.final div {
   margin: 10px;
   text-align: center;
 }
-section.final div h1 {
+section.final div h2 {
   padding: 10px;
   margin: 10px 0 0 0;
   text-align: center;
