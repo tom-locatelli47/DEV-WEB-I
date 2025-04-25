@@ -16,140 +16,167 @@ body {
 }
 
 a {
-    color: #21243d; /*cor do link */
-    text-decoration: none; /*tirar a barra do link */
-  }
-  
-  p {
-    line-height: 130%; /*altura da linha */
-  }
-
-button {
-    background-color: #0E8388;
-    border: none;
-    color: #fff;
-    border-radius: 15px;
-    padding: 8px;
-    }
-
-h1 {
-    color: black;
+  color: #21243d; /*cor do link */
+  text-decoration: none; /*tirar a barra do link */
 }
 
 p {
-    color: #888888;
+  line-height: 130%; /*altura da linha */
 }
 
- img{
-    max-width: 100%;
- }
- 
- html {
-    font-family: comfortaa;
- }
+button {
+  background-color: #0e8388;
+  border: none;
+  color: #fff;
+  border-radius: 15px;
+  padding: 8px;
+}
+
+h1 {
+  color: black;
+}
+
+p {
+  color: #888888;
+}
+
+img {
+  max-width: 100%;
+}
+
+html {
+  font-family: comfortaa;
+}
 
 /*=========================== HEARDER ============================================================*/
 header ul li {
-    text-align: center;
-    padding: 10px 0 10px 0;
-  }
+  text-align: center;
+  padding: 10px 0 10px 0;
+}
 
 header h1 {
-    font-size: 1.4rem;
-    text-align: center;
-    margin: 10px 0 10px 0;
+  font-size: 1.4rem;
+  text-align: center;
+  margin: 10px 0 10px 0;
 }
-
-
 
 main h1 {
-    text-align: center;
-    font-size: 1.2rem;
-    margin: 15px;
+  text-align: center;
+  font-size: 1.2rem;
+  margin: 15px;
 }
 
-main section.inicio  {
-    text-align: center;
-    margin: 0 0 10vw 0;
+main section.inicio {
+  text-align: center;
+  margin: 0 0 10vw 0;
 }
 
 main section.inicio p {
-    text-align: center;
-    padding: 5px;
-    margin: 5px 0 10px 0;
+  text-align: center;
+  padding: 5px;
+  margin: 5px 0 10px 0;
 }
 
 main section.meio {
-    background-color: #CBE4DE;
-    text-align: center;
-    padding:  20px 0 20px 0;
+  background-color: #cbe4de;
+  text-align: center;
+  padding: 20px 0 20px 0;
 }
 
 main section.meio ul li {
-    margin: 30px;
-    background-color: white;
-    padding: 20px;
-    
+  margin: 30px;
+  background-color: white;
+  padding: 20px;
 }
 main section.meio ul li span {
-    margin: 10px;
-    padding: 15px;
-    font-size: 3rem;
+  margin: 10px;
+  padding: 15px;
+  font-size: 3rem;
 }
 
-main section.meio ul li h2{
-   font-size: 1.2rem; 
-   margin: 0 0 10px 0;
-
+main section.meio ul li h2 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
 }
 
 main section.meio ul li span p {
-    margin: 15px 0 20px;
-    padding: 15px;
+  margin: 15px 0 20px;
+  padding: 15px;
 }
 
 section.final h1 {
-    margin: 8vw 0 0 0;
-    
+  margin: 8vw 0 0 0;
 }
 
 section.final p {
-    text-align: center;
-    padding: 10;
-    margin: 10px;
+  text-align: center;
+  padding: 10;
+  margin: 10px;
 }
 
 section.final ul li {
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
 }
 section.final ul li h1 {
-    padding: 10px;
-    margin: 10px 0 0 0;
-    text-align: center;
-
+  padding: 10px;
+  margin: 10px 0 0 0;
+  text-align: center;
 }
 
 footer {
-    text-align: center;
-    background-color: #CBE4DE;
-    padding: 15px;
-
+  text-align: center;
+  background-color: #cbe4de;
+  padding: 15px;
 }
-footer h2{
-    margin: 20px;
-    font-size: 1.5rem;
-}
-
-footer p{
-    margin: 20px;
+footer h2 {
+  margin: 20px;
+  font-size: 1.5rem;
 }
 
-footer ul li{
-    margin: 20px;
+footer p {
+  margin: 20px;
+}
+
+footer ul li {
+  margin: 20px;
 }
 /*==========================================Para Pc=========================================================*/
 @media (min-width: 900px) {
-    
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 2.5vw;
+  }
+
+  header nav ul li {
+    display: inline-block;
+    text-align: right;
+    margin: 0 0 0 15px;
+  }
+
+  section.meio ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  section.meio ul li {
+    width: 20%;
+  }
+
+  section.final div.container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  footer ul {
+    display: flex;
+  }
 }
