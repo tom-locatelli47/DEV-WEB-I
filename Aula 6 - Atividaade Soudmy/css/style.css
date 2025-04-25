@@ -114,12 +114,12 @@ section.final p {
   margin: 10px;
 }
 
-section.final ul li {
+section.final div {
   padding: 10px;
   margin: 10px;
   text-align: center;
 }
-section.final ul li h1 {
+section.final div h1 {
   padding: 10px;
   margin: 10px 0 0 0;
   text-align: center;
@@ -131,16 +131,16 @@ footer {
   padding: 15px;
 }
 footer h2 {
-  margin: 20px;
-  font-size: 1.5rem;
+  margin: 10px;
+  font-size: 1rem;
 }
 
 footer p {
-  margin: 20px;
+  margin: 10px;
 }
 
 footer ul li {
-  margin: 20px;
+  margin: 10px;
 }
 /*==========================================Para Pc=========================================================*/
 @media (min-width: 900px) {
@@ -166,11 +166,22 @@ footer ul li {
     width: 20%;
   }
 
-  section.final div.container {
-    display: flex;
-    justify-content: space-between;
+  
+  section.final {
+    padding: 3vw;
   }
 
+  section.final p {
+    padding: 0 5vw;
+  }
+
+   section.final > div {
+    display: flex;
+    justify-content: space-between;
+    padding: 3vw;
+    
+  } 
+    
   footer {
     display: flex;
     justify-content: space-between;
@@ -178,5 +189,6 @@ footer ul li {
 
   footer ul {
     display: flex;
+
   }
 }
