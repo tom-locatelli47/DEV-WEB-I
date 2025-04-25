@@ -108,6 +108,11 @@ main section.meio ul li span p {
     padding: 15px;
 }
 
+section.final h1 {
+    margin: 8vw 0 0 0;
+    
+}
+
 section.final p {
     text-align: center;
     padding: 10;
@@ -118,6 +123,12 @@ section.final ul li {
     padding: 10px;
     margin: 10px;
     text-align: center;
+}
+section.final ul li h1 {
+    padding: 10px;
+    margin: 10px 0 0 0;
+    text-align: center;
+
 }
 
 footer {
