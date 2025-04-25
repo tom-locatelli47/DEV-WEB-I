@@ -181,6 +181,9 @@ footer ul li {
     padding: 3vw;
     
   } 
+  section.final > div .texto {
+    padding: 3vw;
+  }
     
   footer {
     display: flex;
