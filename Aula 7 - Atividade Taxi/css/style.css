@@ -98,4 +98,17 @@ a.login {
         margin: 0px 10px 0px 10px;
     }
 
+    header nav ul ul {
+        display: none;
+        text-align: center;
+    }
+
+    header nav ul li:hover ul {
+        display: block;
+        position: absolute;
+    }
+
+    header nav ul ul li {
+        margin: 5px 0px 5px 0px;
+    }
 }
