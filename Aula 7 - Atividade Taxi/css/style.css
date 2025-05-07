@@ -1,113 +1,197 @@
 /*=============================================================
                   GERAL
 ==============================================================*/
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
-    font-size: calc(15px + 0.390625vw); /*responsividade da fonte*/
-    font-family: "Roboto";
-    /*font-family. Fonte usadas no sites, se não tiver a primeira ele pega a segunda */
-  }
-  
-  body {
-    /* background: rgb(99, 224, 238); */
-    background: white;
-    color: #21243d;
-    
-  }
-  
-  a {
-    color: #21243d; /*cor do link */
-    text-decoration: none; /*tirar a barra do link */
-  }
-  
-  p {
-    line-height: 130%; /*altura da linha */
-  }
-  
+  font-size: calc(15px + 0.390625vw); /*responsividade da fonte*/
+}
 
+body {
+  /* background: rgb(99, 224, 238); */
+  background: white;
+  color: #21243d;
+  font-family: "Cabin", sans-serif;
+}
 
+a {
+  color: #21243d; /*cor do link */
+  text-decoration: none; /*tirar a barra do link */
+  font-size: 1.2rem;
+}
 
-  
-  h1 {
-    color: black;
-  }
-  
-  h2 {
-      color: black;
-    }
-  
-  p {
-    color: #888888;
-  }
-  
-  img {
-    max-width: 100%;
-  }
-  
+p {
+  line-height: 130%; /*altura da linha */
+}
 
+h1 {
+  color: black;
+  font-size: 2.2rem;
+}
+
+h2 {
+  color: black;
+}
+
+p {
+  color: #888888;
+}
+
+img {
+  max-width: 100%;
+}
 
 /* ======================================================HEADER=================================================================*/
 
-header nav ul li  {
-    text-align: center;
-    padding: 10px;
-    font-family: "Cabin";
+header {
+  text-align: center;
+  padding: 2vw 3vw 2vw 3vw;
 }
 
+header nav ul li {
+  margin: 20px;
+}
 a.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+a.login {
+  color: #fbbc05;
+}
+
+a.get-started {
+  color: white;
+  background: #fbbc05;
+  padding: 12px;
+  border-radius: 8px;
+}
+/*=================================================================================================================*/
+section.banner {
+  background: url(../src/image/celular.png) no-repeat right,
+    url(../src/image/background-footer.png),
+    linear-gradient(rgba(225, 244, 255, 0.6), rgba(225, 244, 255, 0.6));
+  padding: 10vw 8vw;
+  background-size: auto 100%;
+}
+
+section.banner h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  line-height: 130%; /* altura da linha */
+  width: 30%;
+}
+
+section.banner p.text {
+  width: 50%;
+}
+
+section.banner p {
+  margin: 30px 0;
+}
+
+section.banner p button {
+  background-color: #252b42;
+  color: white;
+  border-radius: 10px;
+  font-size: 1.2rem;
+  padding: 15px 20px;
+  border: none;
+  margin: 5px;
+}
+
+section.banner p button span {
+  margin: 0 0;
+}
+
+section.ready h2 {
+  text-align: center;
+  font-size: 2rem;
+  padding: 8vw 0 0.5vw 0;
+}
+
+section.ready p {
+  margin: 20px 0;
+  width: 40%;
+  display: block;
+}
+
+section.ready div.texto-meio {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 6vw 0;
+}
+
+section.ready ul li {
+  text-align: left;
+}
+
+section.ready ul li span {
+  background: #e1f4ff;
+  color: #fbbc05;
+  font-size: 3rem;
+  padding: 10px;
+  border-radius: 8px;
+  width: 20%;
+  margin: 10px;
+  text-align: center;
+}
+
+/*=============================================PC=============================================================================*/
+
+@media (min-width: 1024px) {
+  header {
+    font-size: 0.5rem;
+  }
+
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  header nav > ul {
     display: flex;
     align-items: center;
-    justify-content: center;
-}
-
-a.login {
-    background-color: #Fff;
-    border: none;
-    color: #FBBC05;
-    border-radius: 15px;
-    padding: 8px;
   }
 
-  a.get {
-    background-color: #FBBC05;
-    border: none;
-    color: #fff;
-    border-radius: 15px;
-    padding: 8px;
+  header nav ul li {
+    margin: 0px 10px 0px 10px;
   }
 
+  header nav ul ul {
+    display: none;
+  }
 
+  header nav ul li:hover ul {
+    display: block;
+    position: absolute;
+  }
 
-/*========================================PC=============================================*/
-@media (min-width: 1024px) {
-    header nav {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
+  header nav ul ul li {
+    margin: 5px 0 5px 0;
+  }
 
-    header nav > ul {
-        display: flex;
-        align-items: center;
-    }
-    
-    header nav ul li {
-        margin: 0px 10px 0px 10px;
-    }
+  h1 {
+    font-size: 1rem;
+  }
 
-    header nav ul ul {
-        display: none;
-        text-align: center;
-    }
+  a {
+    font-size: 1rem;
+  }
 
-    header nav ul li:hover ul {
-        display: block;
-        position: absolute;
-    }
+  a.logo img {
+    margin: 0 7px 0 0;
+  }
 
-    header nav ul ul li {
-        margin: 5px 0 5px 0px;
-    }
+  section.ready div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  section.ready ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 10vw;
+  }
 }
