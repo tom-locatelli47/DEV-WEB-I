@@ -109,6 +109,10 @@ section.ready h2 {
   padding: 8vw 0 0.5vw 0;
 }
 
+section.redy {
+  text-align: center;
+}
+
 section.ready p {
   margin: 20px 0;
   width: 40%;
@@ -123,6 +127,11 @@ section.ready div.texto-meio {
 
 section.ready ul li {
   text-align: left;
+}
+
+section.ready ul li h3{
+  margin: 15px 0 5px 0;
+  font-size: 1rem;
 }
 
 section.ready ul li span {
@@ -188,10 +197,15 @@ section.ready ul li span {
     justify-content: space-between;
     align-items: center;
   }
+  
+  section.ready img {
+   margin: 0 0 0 5vw;
+  }
 
   section.ready ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 10vw;
+    padding: 0 0 0 5vw;
   }
 }
