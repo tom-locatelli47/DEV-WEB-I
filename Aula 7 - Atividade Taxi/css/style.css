@@ -179,6 +179,47 @@ section.dowload button {
   border-radius: 10px;
   font-size: 1rem;
 }
+
+section.services {
+  margin: 5vw;
+  color: black;
+  display: flex;
+  justify-content: space-between;
+}
+
+section.services div.titulo h2 {
+  font-weight: bold;
+  text-align: left;
+}
+
+section.services div.titulo p {
+  text-align: left;
+  padding: 5px 0 0 0;
+}
+
+section.services div.services ul {
+  padding: 20px;
+  display: flex;
+}
+
+section.services div.services ul li p {
+  color: black;
+}
+
+section.services div.services ul li h2 {
+  font-weight: bold;
+  padding: 10px;
+}
+
+section.services div.services ul li {
+  border-radius: none;
+  padding: 1vw;
+  margin: 1vw;
+  width: 30%;
+  background-color: #ede8e8;
+}
+
+
 /*=============================================PC=============================================================================*/
 
 @media (min-width: 1024px) {
@@ -242,4 +283,29 @@ section.dowload button {
     margin: 0 0 0 10vw;
     padding: 0 0 0 5vw;
   }
+
+  section.services div.services ul li span#redirecionamento {
+    display: none;
+
+   }
+
+  section.services div.services ul li:hover span#redirecionamento {
+    display: inline;
+    position: absolute;
+    padding:  0 18vw 0 18vw;
+    }
+
+  section.services div.services ul li:hover {
+    background-color: #fbbc05;
+   }
+
+   section.services ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 10vw;
+    padding: 0 0 0 10vw;
+   }
+
 }
+
+
