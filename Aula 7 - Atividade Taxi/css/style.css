@@ -129,7 +129,7 @@ section.ready ul li {
   text-align: left;
 }
 
-section.ready ul li h3{
+section.ready ul li h3 {
   margin: 15px 0 5px 0;
   font-size: 1rem;
 }
@@ -145,6 +145,40 @@ section.ready ul li span {
   text-align: center;
 }
 
+section.dowload {
+  background-color: #fbbc05;
+  border-radius: 20px;
+  padding: 10vw 2vw 10vw 12vw;
+  margin: 5vw;
+  background-image: url(../src/image/celular.png), url(../src/image/celular.png);
+  background-repeat: no-repeat, no-repeat;
+  background-position: 66% 170%, 100% -54%;
+  background-size: 30% auto, 30% auto;
+  border: 1px solid black; /* bordinha */
+}
+
+section.dowload div h2 {
+  font-size: 2rem;
+  color: white;
+  padding: 0 0 4vw 0.5vw;
+  width: 100%;
+  font-weight: bold; /*negrito*/
+}
+
+section.dowload div p {
+  color: white;
+  padding: 0 0 0 0.5vw;
+  width: 30%;
+}
+
+section.dowload button {
+  color: #ffffff;
+  background-color: #21243d;
+  padding: 1.2vw 3vw;
+  margin: 5vw 0 0 0.5vw;
+  border-radius: 10px;
+  font-size: 1rem;
+}
 /*=============================================PC=============================================================================*/
 
 @media (min-width: 1024px) {
@@ -197,9 +231,9 @@ section.ready ul li span {
     justify-content: space-between;
     align-items: center;
   }
-  
+
   section.ready img {
-   margin: 0 0 0 5vw;
+    margin: 0 0 0 5vw;
   }
 
   section.ready ul {
