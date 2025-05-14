@@ -186,8 +186,6 @@ section.services {
   display: flex;
   justify-content: space-between;
   margin: 0 0 0 10vw;
-  
-
 }
 
 section.services div.titulo {
@@ -218,7 +216,6 @@ section.services div.services ul li p {
 section.services div.services ul li h3 {
   font-weight: bold;
   padding: 30px 20px 20px 10px;
-
 }
 
 section.services div.services ul li {
@@ -232,8 +229,11 @@ section.services div.services ul li span {
   font-size: 2rem;
 }
 
+section.contact {
+  margin: 5vw;
+}
+
 section.contact div.contact {
-  text-align: center;
   margin: 10vw 0 5vw 0;
 }
 
@@ -241,12 +241,77 @@ section.contact div.contact h2 {
   font-size: 1rem;
   padding: 1vw;
   font-weight: bold;
+  text-align: center;
 }
 section.contact div.contact p {
-  color: #39393B;
+  color: #39393b;
   font-size: 0.7rem;
-  
+  text-align: center;
 }
+
+section.contact div.informacao form input {
+  border: none;
+  border-bottom: 2px solid #fbbc05;
+  padding: 1vw;
+  color: black;
+}
+section.contact div.informacao form textarea {
+  border: none;
+  border-bottom: 2px solid #fbbc05;
+  width: 100%;
+  text-align: left;
+}
+
+section.contact div.informacao legend {
+  text-align: left;
+  font-weight: bold;
+  font-size: 0.7rem;
+  padding: 1vw;
+}
+
+section.contact div.mensagem {
+  width: 100%;
+}
+section.contact div.informacao button {
+  color: rgb(0, 0, 0);
+  background-color: #fbbc05;
+  padding: 10px 20px;
+  border: none;
+  margin: 15px;
+}
+
+section.contact div.map {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10vw;
+}
+/*==================================footer=====================================================================*/
+footer div.fim {
+  display: flex;
+  justify-content: space-between;
+  margin:  10vw 20vw;
+}
+
+footer div.fim span {
+  color: #fbbc05;
+  padding: 15px 12px 7px 0;
+}
+footer div.fim h2 {
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+footer div.fim ul li{
+  color: #888888;
+  padding: 10px 0;
+}
+footer div.terminado {
+  text-align: center;
+  background-color: #e1f4ff;
+  padding: 2% 0;
+  color: #888888;
+}
+
 /*=============================================PC=============================================================================*/
 
 @media (min-width: 1024px) {
@@ -313,26 +378,28 @@ section.contact div.contact p {
 
   section.services div.services ul li span#redirecionamento {
     display: none;
-
-   }
+  }
 
   section.services div.services ul li:hover span#redirecionamento {
     display: inline;
     position: absolute;
-    padding:  0 15vw 0 15vw;
-    }
+    padding: 0 15vw 0 15vw;
+  }
 
   section.services div.services ul li:hover {
     background-color: #fbbc05;
-   }
+  }
 
-   section.services ul {
+  section.services ul {
     display: flex;
     flex-wrap: wrap;
     margin: 0 0 0 10vw;
     padding: 0 0 0 10vw;
-   }
+  }
 
+  section.contact div.informacao {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+  }
 }
-
-
