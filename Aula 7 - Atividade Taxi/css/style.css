@@ -185,41 +185,68 @@ section.services {
   color: black;
   display: flex;
   justify-content: space-between;
+  margin: 0 0 0 10vw;
+  
+
+}
+
+section.services div.titulo {
+  text-align: left;
+  width: 110%;
 }
 
 section.services div.titulo h2 {
   font-weight: bold;
-  text-align: left;
 }
 
 section.services div.titulo p {
-  text-align: left;
-  padding: 5px 0 0 0;
+  padding: 8px 0 0 0;
+  color: black;
+  font-size: 0.7rem;
 }
 
 section.services div.services ul {
-  padding: 20px;
+  padding: 20px 20px 20px 10vw;
   display: flex;
 }
 
 section.services div.services ul li p {
   color: black;
+  padding: 10px 20px 20px 10px;
 }
 
-section.services div.services ul li h2 {
+section.services div.services ul li h3 {
   font-weight: bold;
-  padding: 10px;
+  padding: 30px 20px 20px 10px;
+
 }
 
 section.services div.services ul li {
   border-radius: none;
   padding: 1vw;
   margin: 1vw;
-  width: 30%;
+  width: 40%;
   background-color: #ede8e8;
 }
+section.services div.services ul li span {
+  font-size: 2rem;
+}
 
+section.contact div.contact {
+  text-align: center;
+  margin: 10vw 0 5vw 0;
+}
 
+section.contact div.contact h2 {
+  font-size: 1rem;
+  padding: 1vw;
+  font-weight: bold;
+}
+section.contact div.contact p {
+  color: #39393B;
+  font-size: 0.7rem;
+  
+}
 /*=============================================PC=============================================================================*/
 
 @media (min-width: 1024px) {
@@ -292,7 +319,7 @@ section.services div.services ul li {
   section.services div.services ul li:hover span#redirecionamento {
     display: inline;
     position: absolute;
-    padding:  0 18vw 0 18vw;
+    padding:  0 15vw 0 15vw;
     }
 
   section.services div.services ul li:hover {
