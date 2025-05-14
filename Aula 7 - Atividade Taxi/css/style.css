@@ -298,7 +298,8 @@ footer div.fim span {
 }
 footer div.fim h2 {
   font-weight: bold;
-  font-size: 1rem;
+  font-size: 1.2rem;
+  padding: 0 0 5px 0;
 }
 
 footer div.fim ul li{
