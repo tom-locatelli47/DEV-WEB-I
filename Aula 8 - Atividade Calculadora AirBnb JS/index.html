@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATV - AIRBNB</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <main>
+      <section>
+        <form action="">
+          <h1>R$620<span class="pequeno">noite</span></h1>
+          <div class="todos">
+            <div class="datas">
+              <div class="esq">
+                <p><label for="checkin">CHECK-IN</label></p>
+                <input
+                  class="data"
+                  type="date"
+                  required
+                  name="checkin"
+                  id="checkin" />
+              </div>
+              <div>
+                <p><label for="checkout">CHECKOUT</label></p>
+                <input
+                  class="data"
+                  type="date"
+                  required
+                  name="checkout"
+                  id="checkout" />
+              </div>
+            </div>
+            <div class="hospedes">
+              <p><label for="hospede">HÓSPEDES</label></p>
+              <select name="hospede" id="hospede">
+                <option value="1">1 Hóspede</option>
+                <option value="2">2 Hóspedes</option>
+                <option value="3">3 Hóspedes</option>
+                <option value="4">4 Hóspedes</option>
+              </select>
+            </div>
+          </div>
+          <button id="reserva">Reservar</button>
+        </form>
+        <div class="results">
+          <p>Você ainda não será cobrado</p>
+          <div class="listas">
+            <ul>
+              <li>
+                <span id="subtotal">R$620 X 5 noites</span>
+              </li>
+              <li>
+                <span>Taxa de limpeza</span>
+              </li>
+              <li>
+                <span>Taxa de serviço do Airbnb</span>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <span id="valorsub">R$3.100</span>
+              </li>
+              <li>
+                <span>R$120</span>
+              </li>
+              <li>
+                <span>R$468</span>
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <p>Total sem impostos: R$3.688</p>
+        </div>
+      </section>
+      <script>
+        let reserva = document.getElementById("reserva");
+        let checkout = document.getElementById("checkout");
+
+        checkout.addEventListener("change", function () {
+          let data_saida = new Date(this.value);
+          let data_entrada = new Date(document.getElementById("checkin").value);
+          let diarias = (data_saida - data_entrada) / 86400000;
+
+          let subtotal = document.getElementById("subtotal");
+          subtotal.innerText = "R$620 X " + diarias + " noites";
+
+          let valorsub = document.getElementById("valorsub");
+          valorsub.innerText = "R$" + (620 * diarias);
+        });
+      </script>
+    </main>
+  </body>
+</html>
