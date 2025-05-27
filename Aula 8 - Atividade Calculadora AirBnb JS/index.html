@@ -11,7 +11,10 @@
     <main>
       <section>
         <form action="">
-          <h1><span id="preco_diaria">R$620</span><span class="pequeno">noite</span></h1>
+          <h1>
+            <span id="preco_diaria">R$620</span
+            ><span class="pequeno">noite</span>
+          </h1>
           <div class="todos">
             <div class="datas">
               <div class="esq">
@@ -67,7 +70,7 @@
                 <p><span id="limpeza">R$120</span></p>
               </li>
               <li>
-                <p><spani id="taxa">R$468</span></p>
+                <p><span id="taxa">R$468</span></p>
               </li>
             </ul>
           </div>
@@ -84,28 +87,31 @@
           let data_entrada = new Date(document.getElementById("checkin").value);
           let diarias = (data_saida - data_entrada) / 86400000;
 
-          let preco_diaria = parseFloat(document.getElementById("preco_diaria").innerText.substring(2)) 
+          let preco_diaria = parseFloat(
+            document.getElementById("preco_diaria").innerText.substring(2)
+          );
 
           let subtotal = document.getElementById("subtotal");
-          subtotal.innerText = "R$" + preco_diaria + " X " + diarias + " noites";
+          subtotal.innerText =
+            "R$" + preco_diaria + " X " + diarias + " noites";
+
+          let hospedes = document.getElementById("hospede").value;
 
           let valorsub = document.getElementById("valorsub");
-          let valor_sube = (preco_diaria * diarias);
-          valorsub.innerText = "R$" + ( valor_sube);
+          let valor_sube = preco_diaria * (1 + 0.2 * (hospedes - 1)) * diarias;
+          valorsub.innerText = "R$" + valor_sube;
 
           let taxa = document.getElementById("taxa");
           let valor_taxa = valor_sube * 0.15;
-          taxa.innerText = "R$" + (valor_taxa);
+          taxa.innerText = "R$" + valor_taxa;
 
           let limpeza = document.getElementById("limpeza");
-          let valor_limpeza= parseFloat(limpeza.innerText.substring(2));
-          console.log(valor_limpeza)
-          limpeza.innerText = "R$" + (valor_limpeza);
- 
-          let total = document.getElementById("total");
-          total.innerText = "R$" + ( valor_sube + valor_limpeza + valor_taxa);
+          let valor_limpeza = parseFloat(limpeza.innerText.substring(2));
+          console.log(valor_limpeza);
+          limpeza.innerText = "R$" + valor_limpeza;
 
-          
+          let total = document.getElementById("total");
+          total.innerText = "R$" + (valor_sube + valor_limpeza + valor_taxa);
         });
       </script>
     </main>
