@@ -39,6 +39,7 @@ Acesse o jogo diretamente pelo GitHub Pages:
 
 ## 🖼️ Prévia
 
-![image](https://github.com/user-attachments/assets/a627ae3d-9929-41c9-82ee-872db3d05227)
+![image](https://github.com/user-attachments/assets/95a82494-d3dd-4553-b565-f9a582629522)
+
 
 
