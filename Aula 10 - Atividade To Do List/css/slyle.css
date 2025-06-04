@@ -1,0 +1,35 @@
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5vw 0 0 0;
+    padding: 0 0 10px 0;
+} 
+
+h2 { 
+    font-size: 2rem;
+}
+
+button {
+    color: rgb(255, 255, 255);
+    background-color: rgb(58, 77, 160);
+    border-radius: 5px;
+}
+
+span.remover {
+    color: brown;
+}
+
+span.editar {
+    color: blue;
+}
+
+div.lista {
+
+}
+
+section div.tarefas {
+
+  
+}
+
