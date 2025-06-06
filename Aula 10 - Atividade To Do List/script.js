@@ -6,10 +6,11 @@ button.addEventListener("click",function(evt) { //quando dou um "click" ele vai 
     let campo = document.querySelector("input"); // só existe um input, por isso não é um id
     let lista = document.querySelector("#lista");
     let item = document.createElement("li");  // criou um li
-    item.innerHTML = "<span class='texto'>" +
+    item.innerHTML = "<div><input type='checkbox' class='checkbox'/><span class='texto'>" +
      campo.value + 
-     "</span> <span class='remover'>remover</span> <span class='editar'> edit </span> ";
+     "</div><div></span> <span class='remover'>remover</span> <span class='editar'> edit </span></div> ";
     lista.appendChild(item); //incerriu o item
+    campo.value = "";
     console.log(item);
     console.log("foi");
 });
@@ -22,12 +23,12 @@ lista.addEventListener("click",function(evt){ // onde clicou
 
     if(elemento.className == 'remover'){
       //  elemento.remove(); assim remove só o elemento kkkk só o nome "Remover"
-      elemento.parentElement.remove();
+      elemento.parentElement.parentElement.remove();
     }
 
     else if(elemento.className == 'editar'){
-        elemento.parentElement.querySelector('.texto').contentEditable = true; // tornar possivel edição
-        elemento.parentElement.querySelector('.texto').focus(); // redirecionu o foco para o botão editar
+        elemento.parentElement.parentElement.querySelector('.texto').contentEditable = true; // tornar possivel edição
+        elemento.parentElement.parentElement.querySelector('.texto').focus(); // redirecionu o foco para o botão editar
 
      }
 });
