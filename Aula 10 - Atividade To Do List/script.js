@@ -23,12 +23,19 @@ lista.addEventListener("click",function(evt){ // onde clicou
 
     if(elemento.className == 'remover'){
       //  elemento.remove(); assim remove só o elemento kkkk só o nome "Remover"
-      elemento.parentElement.parentElement.remove();
+      elemento.parentElement.parentElement.remove(); // tem dois por conta da div
     }
 
     else if(elemento.className == 'editar'){
         elemento.parentElement.parentElement.querySelector('.texto').contentEditable = true; // tornar possivel edição
         elemento.parentElement.parentElement.querySelector('.texto').focus(); // redirecionu o foco para o botão editar
-
      }
+     else if (elemento.className === "checkbox") {
+     const texto = elemento.parentElement.parentElement.querySelector(".texto");
+     if (elemento.checked) {
+       texto.classList.add("riscado");
+     } else {
+      texto.classList.remove("riscado");
+     }
+    }
 });
