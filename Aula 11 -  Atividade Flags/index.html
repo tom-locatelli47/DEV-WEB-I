@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Which flag</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- TELA INICIAL -->
+    <section id="tela-inicial" class="tela ativa">
+      <h1>🌍 Desafio geoguessr 🌍</h1>
+      <p>Descubra o idioma, a moeda ou o continente de cada país!💱</p>
+      <button class="botao" onclick="iniciarJogo()">Começar Jogo</button>
+    </section>
+
+    <!-- TELA DO JOGO -->
+    <section id="tela-jogo" class="tela">
+      <div class="cabecalho">
+        <p>00:<span id="contador">30</span></p>
+        <button id="som" onclick="mudasom()">🔊</button>
+      </div>
+
+      <div class="pergunta">
+        <h2 id="pergunta-texto">Qual país fala "espanhol"?</h2>
+      </div>
+
+      <div class="opcoes-grid" id="opcoes">
+        <!-- Bandeiras são carregadas aqui via JS -->
+      </div>
+
+      <div class="pontuacao">Acertos: <span id="acertos">0</span> / 3</div>
+    </section>
+    <section id="tela-vitoria" class="tela">
+      <h1>Sabe muito</h1>
+      <p>Você venceu!!!</p>
+      <button class="botao" onclick="iniciarJogo()">Jogar Novamente</button>
+    </section>
+    <section id="tela-derrota" class="tela">
+      <h1>Infelizmente você perdeu, mas pode tentar novamente</h1>
+      <button class="botao" onclick="iniciarJogo()">
+        Deseja tentar novamente?
+      </button>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
