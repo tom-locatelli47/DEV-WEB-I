@@ -1,20 +1,20 @@
 <script>
-
+import { RouterLink, RouterView } from 'vue-router'
 </script>
 
 <template>
  <header>
       <nav>
         <ul>
-          <li><a href="index.html">Blog</a></li>
-          <li><a href="works.html">Works</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><RouterLink to = "/" >Blog</RouterLink></li>
+          <li><RouterLink to = "/works">Works</RouterLink></li>
+          <li><RouterLink to = "/contact">Contact</RouterLink></li>
         </ul>
       </nav>
  </header>
 </template>
 
-<style coped>
+<style scoped>
  header ul li {
   text-align: center;
   padding: 10px 0 10px 0;
