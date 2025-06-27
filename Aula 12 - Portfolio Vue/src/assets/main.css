@@ -1,0 +1,41 @@
+@import './reset.css';
+
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  font-weight: normal;
+}
+
+
+html {
+  font-size: calc(15px + 0.390625vw); /*responsividade da fonte*/
+}
+
+body {
+  /* background: rgb(99, 224, 238); */
+  background: white;
+  color: #21243d;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  /*font-family. Fonte usadas no sites, se não tiver a primeira ele pega a segunda */
+}
+
+a {
+  color: #21243d; /*cor do link */
+  text-decoration: none; /*tirar a barra do link */
+}
+
+p {
+  line-height: 130%; /*altura da linha */
+}
+
+section h2 {
+  text-align: center;
+  margin: 15px;
+  padding: 15px 0 0 0;
+}
+
+img {
+  max-width: 100%;
+}
