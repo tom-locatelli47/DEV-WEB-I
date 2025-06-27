@@ -11,7 +11,7 @@ import Footer from './components/Footer.vue'
     <main>
       <section class="banner">
         <div class="imagem">
-          <img src="../public/images/fotodeperfil.png" alt="Foto do John" />
+          <img src="/images/fotodeperfil.png" alt="Foto do John" />
         </div>
         <div class="texto">
           <h1>Hi, I am John, Creative Technologist</h1>
@@ -52,7 +52,7 @@ import Footer from './components/Footer.vue'
         <h2>Featured works</h2>
         <ul>
           <li>
-            <img src="../public/images/informação.png" alt="Exemplo dash" />
+            <img src="/images/informação.png" alt="Exemplo dash" />
             <h3>Designing Dashboards</h3>
             <p class="info"><span>2020</span> Dashboard</p>
             <p>
@@ -62,7 +62,7 @@ import Footer from './components/Footer.vue'
             </p>
           </li>
           <li>
-            <img src="../public/images/mulher.png" alt="Mulher rosa" />
+            <img src="/images/mulher.png" alt="Mulher rosa" />
             <h3>Vibrant Portraits of 2020</h3>
             <p class="info"><span>2018</span> Illustration</p>
             <p>
