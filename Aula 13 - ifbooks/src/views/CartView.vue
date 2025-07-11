@@ -9,7 +9,7 @@ const cartStore = useCartStore();
 
 <template>
   <main>
-    <section class="cart">
+    <section v-if="cartStore.cart.items.length > 0" class="cart">
       <h2>Carrinho</h2>
       <table>
         <thead>
@@ -26,20 +26,25 @@ const cartStore = useCartStore();
               <div class="cart-item-info">
                 <p class="cart-item-title">{{book.title}}</p>
                 <p class="cart-item-author">{{ book.author }}</p>
-                <p class="cart-item-price">R$ {{ book.price }}</p>
+                <p class="cart-item-price">R$ {{ book.price.toFixed(2) }}</p>
               </div>
             </td>
-            <td>
-              <div class="cart-item-quantity">
-                <button class="plain"><span class="mdi mdi-minus"></span></button> 1
-                <button class="plain"><span class="mdi mdi-plus"></span></button>
-              </div>
-            </td>
-            <td class="cart-item-subtotal">R$ {{book.price}}</td>
+             <td>
+            <div class="cart-item-quantity">
+              <button class="plain" @click="cartStore.decrementBookToCart(book)">
+                <span class="mdi mdi-minus" />
+              </button>
+              {{ book.quantity }}
+              <button class="plain" @click="cartStore.incrementBookToCart(book)">
+                <span class="mdi mdi-plus" />
+              </button>
+            </div>
+          </td>
+            <td class="cart-item-subtotal">R$ {{(book.price * book.quantity).toFixed(2)}}</td>
           </tr>
         </tbody>
       </table>
-      <a href="/" class=""><button class="outlined">Voltar para loja</button></a>
+      <router-link to = "/"><button class="outlined">Voltar para loja</button></router-link>
       <div class="cart-summary">
         <div class="cupom">
           <input type="text" placeholder="Código do cupom" /><button>Inserir cupom</button>
@@ -47,12 +52,16 @@ const cartStore = useCartStore();
         <div class="summary">
           <h2>Total da Compra</h2>
           <div class="summary-items">
-            <span>Produtos</span> <span>R$ {{cartStore.cart.total}}</span><span>Frete</span> <span> Grátis</span>
-            <span>Total</span><span>R$ {{cartStore.cart.total}}</span>
+            <span>Produtos</span> <span>R$ {{cartStore.cart.total.toFixed(2)}}</span><span>Frete</span> <span> Grátis</span>
+            <span>Total</span><span>R$ {{cartStore.cart.total.toFixed(2)}}</span>
           </div>
           <button>Ir para pagamento</button>
         </div>
       </div>
+    </section>
+    <section v-else class="cart">
+      <h2> Carrinho Vazio</h2>
+      <router-link to = "/"><button class="outlined">Voltar para loja</button></router-link>
     </section>
   </main>
 </template>

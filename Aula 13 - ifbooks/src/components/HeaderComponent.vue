@@ -106,4 +106,13 @@ header nav {
     padding-right: 2rem;
   }
 }
+
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
 </style>
