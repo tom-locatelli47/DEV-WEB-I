@@ -9,7 +9,7 @@ const cartStore = useCartStore();
 
 <template>
   <main>
-    <section v-if="cartStore.cart.items.length > 0" class="cart">
+    <section class="cart">
       <h2>Carrinho</h2>
       <table>
         <thead>
@@ -20,6 +20,9 @@ const cartStore = useCartStore();
           </tr>
         </thead>
         <tbody>
+          <p  class = "aviso" v-if="cartStore.cart.items.length <= 0"> Não tem nada no carrinho
+
+          </p> 
           <tr v-for =" book in cartStore.cart.items" :key="book.id" >
             <td   class="cart-item">
               <img :src="book.cover" :alt="book.title" />
@@ -59,14 +62,17 @@ const cartStore = useCartStore();
         </div>
       </div>
     </section>
-    <section v-else class="cart">
-      <h2> Carrinho Vazio</h2>
-      <router-link to = "/"><button class="outlined">Voltar para loja</button></router-link>
-    </section>
   </main>
 </template>
 
 <style>
+
+.aviso {
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #27ae60;
+
+}
 .cart {
   display: flex;
   flex-direction: column;
